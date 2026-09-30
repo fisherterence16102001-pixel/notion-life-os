@@ -1,0 +1,36 @@
+{
+  "name": "notion-life-os",
+  "version": "1.0.0",
+  "description": "FAN DA WAN LIFE OS - Notion personal life operating system",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "init": "ts-node src/scripts/init.ts",
+    "sync": "ts-node src/scripts/sync.ts",
+    "update": "ts-node src/scripts/update.ts",
+    "dry-run": "ts-node src/scripts/dryRun.ts",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "notion",
+    "life-os",
+    "personal-dashboard",
+    "productivity"
+  ],
+  "author": "饭大碗",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.1",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.12.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}
